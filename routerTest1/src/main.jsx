@@ -4,19 +4,16 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import './index.css'
 import About from './pages/About.jsx'
 import Home from './pages/Home'
+import Layout from './assets/Layout'
 
 function App() {
   return (
     <BrowserRouter>
-      <header>
-        <Link to="/" className='app--logo'>Caravan World</Link>
-        <nav>
-          <Link to="/about">About</Link>
-        </nav>
-      </header>
     <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
+      <Route path='/' element={<Layout/>}>
+        <Route index element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Route>
     </Routes>
   </BrowserRouter>
   )
