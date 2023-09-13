@@ -6,8 +6,9 @@ export default function Navbar() {
         <header>
             <Link to="/" className='app--logo'>Caravan World</Link>
             <nav>
-            <Link to="/about">About</Link>
-        </nav>
+                <Link to="/" className="home--link">Home</Link>
+                <Link to="/about">About</Link>
+            </nav>
       </header>
     )
 }

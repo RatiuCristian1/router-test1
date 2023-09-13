@@ -60,4 +60,24 @@ h1 {
   max-height: 650px;
 }
 
+.home--link {
+  margin-right: 20px;
+}
+
+.caravans--container {
+  width: 80%;
+  margin: 2rem auto 0;
+}
+
+.caravan--image--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.caravan--image {
+  width: 50%;
+}
 
